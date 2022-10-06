@@ -31,13 +31,13 @@ Keypad customKeypad = Keypad(makeKeymap(hexaKeys), rowPins, colPins, RIGHE, COLS
  
 MFRC522 rfid(SS_PIN, RST_PIN);
 
-const char * ssid = "Galaxy Note 9"; //modificare in base alla rete
-const char * password = "35711753!"; //modificare in base alla password della rete
-const char *host = "http://192.168.1.9/"; //modificare in base all host
+const char * ssid = ""; //modificare in base alla rete
+const char * password = ""; //modificare in base alla password della rete
+const char *host = "http://"; //modificare in base all host
 String server = "http://maker.ifttt.com";
-String eventName = "rfid_read";
-String IFTTT_Key = "cXXiQKuReUZ649JNIVBSMa";
-String IFTTTUrl="https://maker.ifttt.com/trigger/rfid_read/with/key/cXXiQKuReUZ649JNIVBSMa";
+String eventName = "";
+String IFTTT_Key = "";
+String IFTTTUrl="";
 String value1;
 String value2;
 String value3;
