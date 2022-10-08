@@ -65,7 +65,7 @@ void loop() {
       HTTPClient http;
       String GetAddress, LinkGet, getData;
       String id = String(rfid.uid.uidByte[0])+String(rfid.uid.uidByte[1])+String(rfid.uid.uidByte[2])+String(rfid.uid.uidByte[3]);
-      GetAddress = "scriptDataset.php?uid="+id; 
+      GetAddress = "scriptDatabase.php?uid="+id; 
       LinkGet = host + GetAddress; 
       http.begin(LinkGet);
       http.addHeader("Content-Type", "application/x-www-form-urlencoded");    //Specify content-type header
